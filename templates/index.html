@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Failure Risk Prediction</title>
+</head>
+<body>
+    <h2>Heart Failure Risk Prediction</h2>
+    <form action="/predict" method="POST">
+        <label>Age:</label>
+        <input type="number" name="age" step="0.1" required><br><br>
+
+        <label>Anaemia (1 = Yes, 0 = No):</label>
+        <input type="number" name="anaemia" min="0" max="1" required><br><br>
+
+        <label>Creatinine Phosphokinase (mcg/L):</label>
+        <input type="number" name="creatinine_phosphokinase" required><br><br>
+
+        <label>Diabetes (1 = Yes, 0 = No):</label>
+        <input type="number" name="diabetes" min="0" max="1" required><br><br>
+
+        <label>Ejection Fraction (%):</label>
+        <input type="number" name="ejection_fraction" required><br><br>
+
+        <label>High Blood Pressure (1 = Yes, 0 = No):</label>
+        <input type="number" name="high_blood_pressure" min="0" max="1" required><br><br>
+
+        <label>Platelets (kiloplatelets/mL):</label>
+        <input type="number" name="platelets" step="0.01" required><br><br>
+
+        <label>Serum Creatinine (mg/dL):</label>
+        <input type="number" name="serum_creatinine" step="0.01" required><br><br>
+
+        <label>Serum Sodium (mEq/L):</label>
+        <input type="number" name="serum_sodium" required><br><br>
+
+        <label>Sex (1 = Male, 0 = Female):</label>
+        <input type="number" name="sex" min="0" max="1" required><br><br>
+
+        <label>Smoking (1 = Yes, 0 = No):</label>
+        <input type="number" name="smoking" min="0" max="1" required><br><br>
+
+        <label>Time (days in follow-up period):</label>
+        <input type="number" name="time" required><br><br>
+
+        <input type="submit" value="Predict Risk">
+    </form>
+</body>
+</html>
