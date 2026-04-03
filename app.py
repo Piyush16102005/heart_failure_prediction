@@ -12,7 +12,7 @@ scaler = joblib.load("scaler.pkl")
 features = [
     'age', 'anaemia', 'creatinine_phosphokinase', 'diabetes',
     'ejection_fraction', 'high_blood_pressure', 'platelets',
-    'serum_creatinine', 'serum_sodium', 'sex', 'smoking',
+    'serum_creatinine', 'serum_sodium', 'sex', 'smoking' 'time',
 ]
 
 @app.route('/')
